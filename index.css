@@ -1,0 +1,43 @@
+.content {
+    color: #0d0e79;
+    font-family: 'Franklin Gothic Medium';
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+
+  .table {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dotted 1px red;
+    border-radius: 5px;
+    margin: 10px;
+    transition: width 4s, height 4s;
+  }
+
+  .item:hover {
+    border-color: green;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+
+  .item:hover .tooltiptext{
+    visibility: visible;
+  }
+
+  .tooltiptext{
+    visibility: hidden;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
